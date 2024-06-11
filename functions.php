@@ -5,3 +5,9 @@ function davidpeach_add_excerpts_to_pages()
 {
     add_post_type_support('page', 'excerpt');
 }
+
+add_action('init', 'davidpeach_unhook_auto_excerpt');
+function davidpeach_unhook_auto_excerpt()
+{
+    remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+}
