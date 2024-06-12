@@ -32,7 +32,7 @@ function davidpeach_register_post_types()
         ],
         'hierarchical' => false,
         'rewrite' => [
-            'slug' => 'games',
+            'slug' => 'virtual-photography',
         ],
         'meta_box_cb' => 'post_categories_meta_box',
     ]);
