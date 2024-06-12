@@ -14,3 +14,5 @@ function davidpeach_unhook_auto_excerpt()
     }
     remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 }
+
+require __DIR__.'/functions/post-types.php';
