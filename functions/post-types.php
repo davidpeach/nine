@@ -12,6 +12,7 @@ function davidpeach_register_post_types()
         'supports' => [
             'title', 'editor', 'comments', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats',
         ],
+        'has_archive' => true,
         'taxonomies' => [
             'game',
         ],
@@ -26,7 +27,7 @@ function davidpeach_register_post_types()
         'labels' => [
             'name' => 'Games',
         ],
-        'hierarchical' => true,
+        'hierarchical' => false,
         'rewrite' => [
             'slug' => 'games',
         ],
