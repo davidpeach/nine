@@ -16,6 +16,9 @@ function davidpeach_register_post_types()
         'taxonomies' => [
             'game',
         ],
+        'rewrite' => [
+            'slug' => 'virtual-photography',
+        ],
     ]);
 
     register_taxonomy('game', [
